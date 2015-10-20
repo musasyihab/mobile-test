@@ -17,9 +17,10 @@ Screen 2
 User Experience : [Invision](https://invis.io/U34LY9U7D)
 
 Assets : 
-	* [Screen 1](http://www.freeimages.com/photo/misty-morning-4-1384194)
-    * [Screen 2](http://www.freeimages.com/photo/misty-morning-1375576)
-    * [Avatar](http://uifaces.com/)
+
+* [Screen 1](http://www.freeimages.com/photo/misty-morning-4-1384194)
+* [Screen 2](http://www.freeimages.com/photo/misty-morning-1375576)
+* [Avatar](http://uifaces.com/)
 
 **You:**
 > Hm, this specification is more than a little vague and weird in spots.
