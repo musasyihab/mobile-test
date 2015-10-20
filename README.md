@@ -6,10 +6,18 @@ Our CEO wants a new timeline page. The project manager hands you a file from our
 
 Pretty neat! However, when you look at the notes you think (quietly, to yourself, of course):
 
+Screen 1
+<img src="https://raw.githubusercontent.com/medictrust/mobile-test/master/assets/image/screen1.png" height=350>
+
+Screen 2
+<img src="https://raw.githubusercontent.com/medictrust/mobile-test/master/assets/image/screen%202.png" height=350>
+
 User Experience : [Invision](https://invis.io/U34LY9U7D)
-Assets : - [Screen 1](http://www.freeimages.com/photo/misty-morning-4-1384194)
-         - [Screen 2](http://www.freeimages.com/photo/misty-morning-1375576)
-         - [Avatar](http://uifaces.com/)
+
+Assets : 
+	- [Screen 1](http://www.freeimages.com/photo/misty-morning-4-1384194)
+    - [Screen 2](http://www.freeimages.com/photo/misty-morning-1375576)
+    - [Avatar](http://uifaces.com/)
 
 **You:**
 > Hm, this specification is more than a little vague and weird in spots.
@@ -17,7 +25,7 @@ Assets : - [Screen 1](http://www.freeimages.com/photo/misty-morning-4-1384194)
 The notes read:
 
   1. Implement the design exactly like above.
-  2. Implement api.
+  2. Implement api [http://docs.mobiletest1.apiary.io/](http://docs.mobiletest1.apiary.io/).
   3. (Bonus) Creativity
   4. (Bonus) Consistent code style
 
@@ -29,5 +37,8 @@ The notes read:
 # Be resourceful!
 
 Use the net. Use the mailing list. Use StackOverflow. Whatever you want.
+
+# Question
+[edwinuad[at]gmail.com](edwinuad@gmail.com)
 
 **Good luck!**
