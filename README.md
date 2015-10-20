@@ -1,4 +1,4 @@
-# Timeline Page - Frontend Test v1.1
+# Timeline Page - Mobile Test v1.0
 
 __You're a mobile developer for a new MedicTrust project.__
 
