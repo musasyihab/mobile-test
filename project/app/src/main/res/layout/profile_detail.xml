@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/profileBio"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:background="@color/main_purple"
+        android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/profileAva"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/ava"/>
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brandon Harris"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#ddd"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/profileDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Good job, you've completed 6% more tasks this month"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#ddd"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profileStat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical"
+        android:background="@drawable/photo">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:max="1000"
+                    android:progress="999"
+                    android:progressDrawable="@drawable/circular_progress_green"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Completed"
+                    android:textAllCaps="true"
+                    android:textColor="#CCC"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/statCompletedTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="180"
+                    android:textSize="20sp"
+                    android:textColor="#DDD"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:max="1000"
+                    android:progress="999"
+                    android:progressDrawable="@drawable/circular_progress_orange"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Snoozed"
+                    android:textAllCaps="true"
+                    android:textColor="#CCC"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/statSnoozedTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="64"
+                    android:textSize="20sp"
+                    android:textColor="#DDD"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center">
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:max="1000"
+                    android:progress="999"
+                    android:progressDrawable="@drawable/circular_progress_red"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Overdue"
+                    android:textAllCaps="true"
+                    android:textColor="#CCC"
+                    android:textSize="14sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/statOverdueTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="21"
+                    android:textSize="20sp"
+                    android:textColor="#DDD"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2">
+
+            <ProgressBar
+                android:id="@+id/statOverduePercent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:max="10000"
+                android:progress="9999"
+                android:progressDrawable="@drawable/circular_progress_red_big"/>
+
+            <ProgressBar
+                android:id="@+id/statSnoozedPercent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:max="10000"
+                android:progress="9500"
+                android:progressDrawable="@drawable/circular_progress_orange_big"/>
+
+            <ProgressBar
+                android:id="@+id/statCompletedPercent"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:max="10000"
+                android:progress="7000"
+                android:progressDrawable="@drawable/circular_progress_green_big"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/statTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="123"
+                    android:textColor="#EEE"
+                    android:textSize="30sp"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Total"
+                    android:textColor="#EEE"
+                    android:textAllCaps="true"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp">
+
+            <ImageButton
+                android:id="@+id/profileMonthPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_left"
+                android:background="@android:color/transparent"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/profileMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="February"
+                android:textAllCaps="true"
+                android:textColor="#ddd"
+                android:textSize="20sp"
+                android:layout_centerInParent="true"/>
+
+            <ImageButton
+                android:id="@+id/profileMonthNext"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_right"
+                android:background="@android:color/transparent"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
